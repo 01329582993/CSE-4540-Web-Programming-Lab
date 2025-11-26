@@ -62,7 +62,7 @@ tr:nth-child(even) {
 }
 
 .basic-table caption {
-    caption-side: top;
+    caption-side: top;    
     font-size: 1.1em;
     font-weight: bold;
     margin-bottom: 10px;
@@ -95,6 +95,10 @@ tr:nth-child(even) {
     color: white;
     text-align: center;
     font-weight: bold;
+}
+ 
+.table-footer td{
+    text-align:center;
 }
 
 /* Specific styling for rowspan cells */
