@@ -1,0 +1,5 @@
+PORT=3001
+MongoDB_URI=mongodb+srv://limassoubello_db_user_l4:password_beta@cluster0.1xnylfm.mongodb.net/stylesync
+CLOUD_NAME=dmlj8arym
+CLOUD_API_KEY=818417429553417
+CLOUD_API_SECRET=uqSOq6I0DORHrQqDGRQejqYndEk
