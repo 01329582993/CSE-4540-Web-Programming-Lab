@@ -1,0 +1,435 @@
+{
+	"info": {
+		"_postman_id": "74354a8e-d0bd-486e-b331-abae1c144d43",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "51067976",
+		"_collection_link": "https://wirbaashraf-5171962.postman.co/workspace/Wirb-Ahra's-Workspace~dd077bc3-5048-4493-8ba5-6798fd30f0cd/collection/51067976-74354a8e-d0bd-486e-b331-abae1c144d43?action=share&source=collection_link&creator=51067976"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3001/api/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Arafat Rahman\",\r\n  \"email\": \"arafat@gmail.com\",\r\n  \"age\": 22,\r\n  \"membershipType\": \"premium\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/clothes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Blue Shirt",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "top",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "blue",
+							"type": "text"
+						},
+						{
+							"key": "season",
+							"value": "summer,spring",
+							"type": "text"
+						},
+						{
+							"key": "occasion",
+							"value": "casual",
+							"type": "text"
+						},
+						{
+							"key": "images",
+							"type": "file",
+							"src": [
+								"/C:/Users/HP/Downloads/iiiiiiiiiiiiiim/0a.png",
+								"/C:/Users/HP/Downloads/iiiiiiiiiiiiiim/3a.png",
+								"/C:/Users/HP/Downloads/iiiiiiiiiiiiiim/2a.png"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/clothes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"clothes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://res.cloudinary.com/dmlj8arym/image/upload/v1769353353/mujb0od390yyn235hjmz.png",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://res.cloudinary.com/dmlj8arym/image/upload/v1769353353/mujb0od390yyn235hjmz.png",
+					"protocol": "https",
+					"host": [
+						"res",
+						"cloudinary",
+						"com"
+					],
+					"path": [
+						"dmlj8arym",
+						"image",
+						"upload",
+						"v1769353353",
+						"mujb0od390yyn235hjmz.png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/outfits/generate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/outfits/generate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"outfits",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/outfits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/outfits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"outfits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "web",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Dhaka",
+							"type": "text"
+						},
+						{
+							"key": "stylePreferences",
+							"value": "comfortable",
+							"type": "text"
+						},
+						{
+							"key": "profilePicture",
+							"type": "file",
+							"src": "/C:/Users/HP/Downloads/iiiiiiiiiiiiiim/1a.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/clothes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/clothes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"clothes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/accessories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Black Hat",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "hat",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "black",
+							"type": "text"
+						},
+						{
+							"key": "compatibleWith",
+							"value": "top",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/HP/Downloads/iiiiiiiiiiiiiim/3a.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/accessories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"accessories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/laundry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"items\": [\"69763abb366ba7b41d808446\"],\r\n  \"status\": \"pending\",\r\n  \"scheduledDate\": \"2026-01-26\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/laundry",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"laundry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/laundry/69763e41c05b5aacc27394cb",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"status\": \"done\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/laundry/69763e41c05b5aacc27394cb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"laundry",
+						"69763e41c05b5aacc27394cb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/outfits",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "outfitImages",
+							"type": "file",
+							"src": "/C:/Users/HP/Downloads/iiiiiiiiiiiiiim/0a.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/outfits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"outfits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/weather",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"location\": \"Dhaka\",\r\n  \"conditions\": \"sunny\",\r\n  \"date\": \"2026-01-25\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/weather",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"weather"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/weather",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/weather?city=Dhaka\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Dhaka\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
