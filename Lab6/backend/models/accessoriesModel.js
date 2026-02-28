@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const accessoriesSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  type: String,
+  type: { type: String, enum: ['jewelry', 'bag', 'shoes', 'hat', 'belt'] },
   color: String,
   compatibleWith: [String],
   image: {

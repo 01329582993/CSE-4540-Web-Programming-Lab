@@ -5,10 +5,10 @@ const outfitSchema = new mongoose.Schema({
   clothingItems: [{ type: mongoose.Schema.Types.ObjectId, ref: "Clothes" }],
   accessories: [{ type: mongoose.Schema.Types.ObjectId, ref: "Accessories" }],
   weatherCondition: String,
-  outfitImages: {
+  outfitImages: [{
     url: String,
     public_id: String,
-  },
+  }],
   wearCount: { type: Number, default: 0 },
   createdAt: { type: Date, default: Date.now },
 });

@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const clothesSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  category: String,
+  category: { type: String, enum: ['top', 'bottom', 'dress', 'suit', 'shoes', 'accessories', 'other'] },
   subcategory: String,
   color: { type: String, required: true },
   season: [String],

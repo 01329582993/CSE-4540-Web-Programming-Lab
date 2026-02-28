@@ -9,11 +9,8 @@ exports.wardrobeAnalytics = async (req, res) => {
         const oneYearAgo = new Date();
         oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
 
-        // Most-used items
-        const mostUsed = [...clothes]
-            .sort((a, b) => b.wearCount - a.wearCount)
-            .filter(item => item.wearCount > 0)
-            .slice(0, 10);
+        // Most-used items (wearCount >= 7 per Lab specifications)
+        const mostUsed = clothes.filter(item => item.wearCount >= 7);
 
         // Least-used items
         const leastUsed = clothes.filter(item =>
