@@ -302,8 +302,8 @@ const Outfits = () => {
                 {[...outfits].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map(outfit => outfit && (
                     <div key={outfit._id} className="item-card">
                         <div className="item-image-container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-                            {outfit.outfitImages ? (
-                                <img src={outfit.outfitImages.url} style={{ gridColumn: 'span 2', width: '100%', height: '100%', objectFit: 'cover' }} alt={outfit.name} />
+                            {outfit.outfitImages && outfit.outfitImages.length > 0 ? (
+                                <img src={outfit.outfitImages[0].url} style={{ gridColumn: 'span 2', width: '100%', height: '100%', objectFit: 'cover' }} alt={outfit.name} />
                             ) : (
                                 outfit.clothingItems?.slice(0, 2).map(item => item && (
                                     <img key={item._id} src={item.images?.[0]?.url || 'https://via.placeholder.com/100'} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt={item.name} />
